@@ -141,7 +141,7 @@ const Footer: NextComponentType = () => {
 					<div className={style.copyright}>
 						&copy; Copyright{' '}
 						<strong>
-							<span>Restaurantly</span>
+							<span>Cheffy</span>
 						</strong>
 						. All Rights Reserved
 					</div>

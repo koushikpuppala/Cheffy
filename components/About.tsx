@@ -17,7 +17,7 @@ const About: NextComponentType = () => {
 									layout='raw'
 									width={'100%'}
 									height={'100%'}
-									src='/assets/img/about.jpg'
+									src='/about.jpg'
 									alt=''
 								/>
 							</div>
