@@ -1,0 +1,50 @@
+@import '../_variables';
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+	height: 40px;
+	font-size: 14px;
+	transition: all 0.5s;
+	z-index: 996;
+	.contact_info {
+		i {
+			font-style: normal;
+			color: $secondary-color;
+			span {
+				padding-left: 5px;
+				color: $white;
+			}
+		}
+	}
+	.languages {
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			color: $primary-color;
+			a {
+				color: $white;
+			}
+			li {
+				+ {
+					li {
+						padding-left: 10px;
+					}
+					li::before {
+						display: inline-block;
+						padding-right: 10px;
+						color: $white-opacity;
+						content: '/';
+					}
+				}
+			}
+		}
+	}
+	&.topbar_scrolled {
+		top: -40px;
+	}
+}

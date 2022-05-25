@@ -1,0 +1,154 @@
+@import '../_variables';
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+	.info {
+		width: 100%;
+		i {
+			font-size: 20px;
+			float: left;
+			width: 44px;
+			height: 44px;
+			background: $primary-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50px;
+			transition: all 0.3s ease-in-out;
+		}
+		h4 {
+			padding: 0 0 0 60px;
+			font-size: 18px;
+			font-weight: 500;
+			margin-bottom: 5px;
+			font-family: 'Poppins', sans-serif;
+		}
+		p {
+			padding: 0 0 0 60px;
+			margin-bottom: 0;
+			font-size: 14px;
+			color: #bab3a6;
+		}
+		.open_hours {
+			margin-top: 40px;
+		}
+		.email {
+			margin-top: 40px;
+		}
+		.phone {
+			margin-top: 40px;
+		}
+	}
+	.php_email_form {
+		width: 100%;
+		.form_group {
+			padding-bottom: 8px;
+		}
+		.validate {
+			display: none;
+			color: $error-red;
+			margin: 0 0 15px 0;
+			font-weight: 400;
+			font-size: 13px;
+		}
+		.error_message {
+			display: none;
+			color: $white;
+			background: $error-red;
+			text-align: center;
+			padding: 15px;
+			font-weight: 600;
+		}
+		.sent_message {
+			display: none;
+			color: $white;
+			background: $success-green;
+			text-align: center;
+			padding: 15px;
+			font-weight: 600;
+		}
+		.loading {
+			display: none;
+			text-align: center;
+			padding: 15px;
+			&:before {
+				content: '';
+				display: inline-block;
+				border-radius: 50%;
+				width: 24px;
+				height: 24px;
+				margin: 0 10px -6px 0;
+				border: 3px solid $primary-color;
+				border-top-color: #1a1814;
+				-webkit-animation: animate-loading 1s linear infinite;
+				animation: animate-loading 1s linear infinite;
+			}
+		}
+		input {
+			border-radius: 0;
+			box-shadow: none;
+			font-size: 14px;
+			background: #0c0b09;
+			border-color: #625b4b;
+			color: $white;
+			height: 44px;
+			&::-moz-placeholder {
+				color: $form-placeholder;
+			}
+			&::placeholder {
+				color: $form-placeholder;
+			}
+			&:focus {
+				border-color: $primary-color;
+			}
+		}
+		textarea {
+			border-radius: 0;
+			box-shadow: none;
+			font-size: 14px;
+			background: #0c0b09;
+			border-color: #625b4b;
+			color: $white;
+			padding: 10px 12px;
+			&::-moz-placeholder {
+				color: $form-placeholder;
+			}
+			&::placeholder {
+				color: $form-placeholder;
+			}
+			&:focus {
+				border-color: $primary-color;
+			}
+		}
+		button[type='submit'] {
+			background: $primary-color;
+			border: 0;
+			padding: 10px 35px;
+			color: $white;
+			transition: 0.4s;
+			border-radius: 50px;
+			&:hover {
+				background: $secondary-color;
+			}
+		}
+	}
+}
+
+@keyframes animate-loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes animate-loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
