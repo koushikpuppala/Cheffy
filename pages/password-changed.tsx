@@ -1,38 +1,32 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { NextPage } from 'next'
 import Link from 'next/link'
-import style from '../styles/password-reseted.module.scss'
+import style from '../styles/password-changed.module.scss'
 
-const PasswordReseted: NextPage = () => {
+const PasswordChanged: NextPage = () => {
 	return (
 		<>
 			<section id='hero' className={style.hero}>
 				<div className={`${style.container}`}>
-					<div className={`card text-center ${style.card}`}>
-						<div className={`card-header ${style.card_head}`}>
-							<div className={`${style.symbol}`}>
-								<span className={`${style.symbol_item}`}>
-									<i className='bi bi-check'></i>
-								</span>
-							</div>
-							<h1 className={`card-title ${style.card_head_title}`}>
-								Password Changed Successfully
-							</h1>
-							Your password has been changed successfully. Click below to sign in
-						</div>
-						<div className={`card-body ${style.card_body}`}>
-							<i className={style.reset_pass}>CONTINUE</i>
-							<Link href='#'>
-								<a>
-									<i className='bi bi-arrow-left'></i> Back to Sign In
-								</a>
-							</Link>
+					<div className={style.symbol}>
+						<div className={style.center}>
+							<i className='bi bi-check'></i>
 						</div>
 					</div>
+					<h1 className={`${style.card_title}`}>Password Changed Successfully</h1>
+					<p className={style.card_text}>
+						Your password has been changed successfully. Click below to sign in
+					</p>
+					<button className={`${style.reset_pass} col-md-12`}>CONTINUE</button>
+					<Link href='#'>
+						<a className={`bi bi-arrow-left ${style.back_sign_in}`}>
+							&nbsp;Back to Sign In
+						</a>
+					</Link>
 				</div>
 			</section>
 		</>
 	)
 }
 
-export default PasswordReseted
+export default PasswordChanged
