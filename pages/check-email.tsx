@@ -8,31 +8,30 @@ const CheckEmail: NextPage = () => {
 		<>
 			<section id='hero' className={style.hero}>
 				<div className={`${style.container}`}>
-					<div className={`card text-center ${style.card}`}>
-						<div className={`card-header ${style.card_head}`}>
-							<div className={`${style.symbol}`}>
-								<span className={`${style.symbol_item}`}>
-									<i className='bi bi-envelope'></i>
-								</span>
-							</div>
-							<h1 className={`card-title ${style.card_head_title}`}>
-								Check your email
-							</h1>
-							We sent a password reset link to <br />
-							johndoe@email.com
+					<div className={style.symbol}>
+						<div className={style.left}></div>
+						<div className={style.line}></div>
+						<div className={style.center}>
+							<i className='bi bi-envelope'></i>
 						</div>
-						<div className={`card-body ${style.card_body}`}>
-							<i className={style.reset_pass}>I HAVE CLICKED THE LINK</i>
-							<p className={`card-text ${style.card_body_text}`}>
-								Didn’t receive the email? <Link href='#'>Click to resend</Link>
-							</p>
-							<Link href='#'>
-								<a>
-									<i className='bi bi-arrow-left'></i> Back to Sign In
-								</a>
-							</Link>
-						</div>
+						<div className={style.line}></div>
+						<div className={style.right}></div>
 					</div>
+					<h1 className={`${style.card_title}`}>Check your email</h1>
+					<p className={style.card_text}>
+						We sent a password reset link to <br /> johndoe@email.com
+					</p>
+					<button className={`${style.reset_pass} col-md-12`}>
+						I HAVE CLICKED THE LINK
+					</button>
+					<p className={style.card_text}>
+						Didn’t receive the email? <Link href='#'>Click to resend</Link>
+					</p>
+					<Link href='#'>
+						<a className={`bi bi-arrow-left ${style.back_sign_in}`}>
+							&nbsp;Back to Sign In
+						</a>
+					</Link>
 				</div>
 			</section>
 		</>
