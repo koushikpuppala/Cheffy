@@ -9,19 +9,11 @@ const HotelOverview: NextPage = () => {
 	return (
 		<>
 			<BooksNavbar />
-			<section id='hero' className={`d-flex ${style.hero} bg-light flex-column py-1 px-5`}>
-				<div
-					className='d-flex flex-row container-fluid position-relative'
-					// data-aos='zoom-in'
-					// data-aos-delay='100'
-				>
+			<section id='hero' className={`d-flex ${style.hero} bg-light flex-column py-3 px-5`}>
+				<div className='d-flex flex-row container-fluid position-relative'>
 					<div className='d-flex flex-column justify-content-evenly align-items-start text-center col-7'>
 						<h1>Dusit Thani Dubai</h1>
-						<div
-							className='d-flex flex-row align-items-center justify-content-evenly'
-							style={{
-								width: '90%',
-							}}>
+						<div className='d-flex flex-row align-items-center justify-content-evenly'>
 							<div className='text-center'>
 								<i className={`bi bi-star-fill ${style.star}`}></i>
 								<i className={`bi bi-star-fill ${style.star}`}></i>
@@ -41,7 +33,7 @@ const HotelOverview: NextPage = () => {
 							</div>
 						</div>
 						<div className='d-flex flex-row'>
-							<div className='d-flex p-2'>
+							<div className='d-flex py-2'>
 								<span className={style.tags}>Car park</span>
 							</div>
 							<div className='d-flex p-2'>
@@ -61,14 +53,7 @@ const HotelOverview: NextPage = () => {
 							</div>
 						</div>
 					</div>
-					<div
-						className='col-5'
-						style={{
-							display: 'flex',
-							flexDirection: 'column',
-							justifyContent: 'space-evenly',
-							alignItems: 'flex-end',
-						}}>
+					<div className='col-5 d-flex flex-column justify-content-evenly align-items-end'>
 						<span>
 							<i className='bi bi-heart'></i> &nbsp;
 							<i className='bi bi-share'></i>
@@ -84,7 +69,7 @@ const HotelOverview: NextPage = () => {
 					</div>
 				</div>
 				<div className='d-flex container-fluid position-relative col-12 flex-row'>
-					<div className='col-6 d-flex p-2'>
+					<div className='col-6 d-flex py-2'>
 						<div className='col-12'>
 							<Image
 								width={628}
@@ -148,7 +133,7 @@ const HotelOverview: NextPage = () => {
 			</section>
 
 			<main className={`bg-light ${style.main} px-5`}>
-				<div className='d-flex container-fluid position-relative col-12 flex-row p-3'>
+				<div className='d-flex container-fluid position-relative col-12 flex-row py-3'>
 					<ul className='nav nav-tabs w-100'>
 						<li className='nav-item'>
 							<a className='nav-link active' aria-current='page' href='#'>
@@ -180,9 +165,9 @@ const HotelOverview: NextPage = () => {
 				<div className='d-flex container-fluid position-relative col-12 flex-row'>
 					<div className='col-md-8 py-2'>
 						<div
-							className='alert alert-warning d-flex align-items-center text-black'
+							className='alert alert-warning d-flex flex-row align-items-center justify-content-evenly text-black'
 							role='alert'>
-							<i className='bi bi-exclamation-octagon px-3 fs-3'></i>
+							<i className='bi bi-exclamation-octagon px-2 fs-3'></i>
 							<div>
 								As part of the Coronavirus (COVID-19) restrictions, the property may
 								request additional documentation from guests to validate
