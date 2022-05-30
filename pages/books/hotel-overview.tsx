@@ -9,9 +9,9 @@ const HotelOverview: NextPage = () => {
 	return (
 		<>
 			<BooksNavbar />
-			<section id='hero' className={`d-flex ${style.hero} bg-light flex-column p-1`}>
+			<section id='hero' className={`d-flex ${style.hero} bg-light flex-column py-1 px-5`}>
 				<div
-					className='d-flex flex-row container position-relative'
+					className='d-flex flex-row container-fluid position-relative'
 					// data-aos='zoom-in'
 					// data-aos-delay='100'
 				>
@@ -83,7 +83,7 @@ const HotelOverview: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				<div className='d-flex container position-relative col-12 flex-row'>
+				<div className='d-flex container-fluid position-relative col-12 flex-row'>
 					<div className='col-6 d-flex p-2'>
 						<div className='col-12'>
 							<Image
@@ -147,8 +147,8 @@ const HotelOverview: NextPage = () => {
 				</div>
 			</section>
 
-			<main className={`bg-light ${style.main} p-0`}>
-				<div className='d-flex container position-relative col-12 flex-row p-3'>
+			<main className={`bg-light ${style.main} px-5`}>
+				<div className='d-flex container-fluid position-relative col-12 flex-row p-3'>
 					<ul className='nav nav-tabs w-100'>
 						<li className='nav-item'>
 							<a className='nav-link active' aria-current='page' href='#'>
@@ -177,7 +177,7 @@ const HotelOverview: NextPage = () => {
 						</li>
 					</ul>
 				</div>
-				<div className='d-flex container position-relative col-12 flex-row'>
+				<div className='d-flex container-fluid position-relative col-12 flex-row'>
 					<div className='col-md-8 py-2'>
 						<div
 							className='alert alert-warning d-flex align-items-center text-black'
@@ -286,8 +286,8 @@ const HotelOverview: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				<BooksFooter />
 			</main>
+			<BooksFooter />
 		</>
 	)
 }

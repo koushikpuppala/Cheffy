@@ -6,11 +6,11 @@ const Footer: NextComponentType = () => {
 	return (
 		<>
 			<footer className={style.footer}>
-				<div className='container'>
-					<div className='d-flex flex-row justify-content-evenly'>
+				<div className='container-fluid px-5'>
+					<div className='d-flex flex-row justify-content-evenly py-4'>
 						<div className='d-flex col-3 flex-column p-1'>
 							<div className='d-flex row'>
-								<p className='fs-3 fw-bold'>Help</p>
+								<h3 className='text-black fw-bold'>Help</h3>
 								<ul
 									style={{
 										listStyle: 'none',
@@ -38,7 +38,7 @@ const Footer: NextComponentType = () => {
 						</div>
 						<div className='d-flex col-3 flex-column p-1'>
 							<div className='d-flex row'>
-								<p className='fs-3 fw-bold'>About us</p>
+								<h3 className='text-black fw-bold'>About us</h3>
 								<ul
 									style={{
 										listStyle: 'none',
@@ -60,7 +60,7 @@ const Footer: NextComponentType = () => {
 						</div>
 						<div className='d-flex col-3 flex-column p-1'>
 							<div className='d-flex row'>
-								<p className='fs-3 fw-bold'>Destinations</p>
+								<h3 className='text-black fw-bold'>Destinations</h3>
 								<ul
 									style={{
 										listStyle: 'none',
@@ -76,7 +76,7 @@ const Footer: NextComponentType = () => {
 						</div>
 						<div className='d-flex col-3 flex-column p-1'>
 							<div className='d-flex row'>
-								<p className='fs-3 fw-bold'>Get the app</p>
+								<h3 className='text-black fw-bold'>Get the app</h3>
 								<ul
 									style={{
 										listStyle: 'none',
@@ -92,8 +92,8 @@ const Footer: NextComponentType = () => {
 						</div>
 					</div>
 				</div>
-				<div className={`${style.credits}`}>
-					<div className='container d-flex flex-row justify-content-between align-items-center'>
+				<div className={`${style.credits} px-5`}>
+					<div className='container-fluid d-flex flex-row justify-content-between align-items-center'>
 						<span>
 							© 2022 Metoospace.com is a Cheffy Group company. All rights reserved.
 						</span>
