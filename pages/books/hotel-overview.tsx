@@ -90,7 +90,7 @@ const HotelOverview: NextPage = () => {
 								width={628}
 								height={504}
 								layout='responsive'
-								src='/images/Rectangle 1.png'
+								src='/images/Rectangle_1.png'
 								className='img-fluid rounded'
 								alt=''
 							/>
@@ -104,7 +104,7 @@ const HotelOverview: NextPage = () => {
 										width={302}
 										height={240}
 										layout='responsive'
-										src='/images/Rectangle 4.png'
+										src='/images/Rectangle_4.png'
 										className='img-fluid rounded'
 										alt=''
 									/>
@@ -114,7 +114,7 @@ const HotelOverview: NextPage = () => {
 										width={302}
 										height={240}
 										layout='responsive'
-										src='/images/Rectangle 6.png'
+										src='/images/Rectangle_6.png'
 										className='img-fluid rounded'
 										alt=''
 									/>
@@ -126,7 +126,7 @@ const HotelOverview: NextPage = () => {
 										width={302}
 										height={240}
 										layout='responsive'
-										src='/images/Rectangle 5.png'
+										src='/images/Rectangle_5.png'
 										className='img-fluid rounded'
 										alt=''
 									/>
@@ -136,7 +136,7 @@ const HotelOverview: NextPage = () => {
 										width={302}
 										height={240}
 										layout='responsive'
-										src='/images/Rectangle 7.png'
+										src='/images/Rectangle_7.png'
 										className='img-fluid rounded'
 										alt=''
 									/>
@@ -225,24 +225,21 @@ const HotelOverview: NextPage = () => {
 										<div className='py-1'>
 											<div
 												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img
-													src='/images/Inside_city_center_1.svg'
-													alt=''
-												/>
+												<img src='/images/Inside_city_center.svg' alt='' />
 												<h5>Inside city center</h5>
 											</div>
 										</div>
 										<div className='py-1'>
 											<div
 												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img src='/images/transfer 1.svg' alt='' />
+												<img src='/images/transfer.svg' alt='' />
 												<h5>Airport transfer</h5>
 											</div>
 										</div>
 										<div className='py-1'>
 											<div
 												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img src='/images/Excellent view 1.svg' alt='' />
+												<img src='/images/Excellent_view.svg' alt='' />
 												<h5>
 													Excellent <br /> view
 												</h5>
@@ -253,24 +250,21 @@ const HotelOverview: NextPage = () => {
 										<div className='py-1'>
 											<div
 												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img
-													src='/images/Front desk [24-hour] 1.svg'
-													alt=''
-												/>
+												<img src='/images/Front_desk.svg' alt='' />
 												<h5>Front desk [24-hour]</h5>
 											</div>
 										</div>
 										<div className='py-1'>
 											<div
 												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img src='/images/Sparkling clean 2.svg' alt='' />
+												<img src='/images/Sparkling_clean.svg' alt='' />
 												<h5>Sparkling clean</h5>
 											</div>
 										</div>
 										<div className='py-1'>
 											<div
 												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img src='/images/bus 1.svg' alt='' />
+												<img src='/images/bus.svg' alt='' />
 												<h5>near to public transportation</h5>
 											</div>
 										</div>
