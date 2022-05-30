@@ -155,3 +155,18 @@ section {
 		color: #cda45e;
 	}
 }
+
+.nav-link {
+	color: #000;
+}
+
+ul.nav .nav-link {
+	color: #000000 !important;
+	&:hover {
+		color: #ffa200 !important;
+	}
+	&.active {
+		padding: 0.5rem 0.5rem;
+		border-bottom: #ffa200 solid 2px;
+	}
+}

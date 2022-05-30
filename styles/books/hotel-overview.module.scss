@@ -1,0 +1,63 @@
+.hero {
+	width: 100%;
+	color: black;
+	.line {
+		border-left: #c9cacd 2px solid;
+		height: 1.25rem;
+	}
+	.star {
+		color: #f4ab3e;
+		padding: 0.125rem;
+		font-size: 1rem;
+	}
+	.location {
+		color: #185aaa;
+		cursor: pointer;
+	}
+	.tags {
+		font-size: 0.75rem;
+		padding: 0.25rem 0.5rem;
+		background: #a8dcff;
+		border-radius: 0.5rem;
+	}
+
+	i {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	.discount {
+		background-color: #d32f2f;
+		color: #fff;
+		padding: 0.25rem 0.75rem;
+		border-radius: 1rem;
+		font-size: 0.6rem;
+		font-weight: bold;
+	}
+	.price {
+		display: flex;
+		.price_dis {
+			text-align: end;
+			font-size: 0.75rem;
+		}
+		.price_line {
+			border-left: #000 2px solid;
+			margin: 0.5rem 1rem;
+		}
+		.price_value {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+	}
+}
+
+.main {
+	width: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	color: #000;
+	.highlight_card {
+		padding: 0.75rem;
+		background-color: #d9e6ff;
+		border-radius: 0.5rem;
+	}
+}

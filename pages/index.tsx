@@ -1,15 +1,8 @@
 import type { NextPage } from 'next'
-import { useEffect } from 'react'
 import { Top, Header, About, Contact, Navbar, Footer } from '../components'
 import style from '../styles/Home.module.scss'
-import AOS from 'aos'
 
 const Home: NextPage = () => {
-	useEffect(() => {
-		AOS.init({
-			duration: 1000,
-		})
-	})
 	return (
 		<>
 			<Header title='Cheffy | Home' description='' />
