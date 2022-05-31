@@ -68,72 +68,60 @@ const HotelOverview: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				<div className='d-flex container-fluid position-relative col-12 flex-row'>
-					<div className='col-6 d-flex py-2'>
-						<div className='col-12'>
+				<div className='d-flex'>
+					<div className='col-6 p-2'>
+						<Image
+							width={628}
+							height={504}
+							layout='responsive'
+							src='/Images/Rectangle_1.png'
+							className='img-fluid rounded'
+							alt='Rectangle_1'
+						/>
+					</div>
+					<div className='col-6 d-flex py-1'>
+						<div className='col-6'>
 							<Image
-								width={628}
-								height={504}
+								width={302}
+								height={240}
 								layout='responsive'
-								src='/Images/Rectangle_1.png'
-								className='img-fluid rounded'
-								alt='Rectangle_1'
+								src='/Images/Rectangle_4.png'
+								className='img-fluid rounded p-1'
+								alt='Rectangle_4'
+							/>
+							<Image
+								width={302}
+								height={240}
+								layout='responsive'
+								src='/Images/Rectangle_6.png'
+								className='img-fluid rounded p-1'
+								alt='Rectangle_6'
 							/>
 						</div>
-					</div>
-					<div className='col-6 flex-column p-1'>
-						<div className='column'>
-							<div className='col-6 d-flex'>
-								<div className='col-12 p-1'>
-									<Image
-										width={302}
-										height={240}
-										layout='responsive'
-										src='/Images/Rectangle_4.png'
-										className='img-fluid rounded'
-										alt='Rectangle_4'
-									/>
-								</div>
-								<div className='col-12 p-1'>
-									<Image
-										width={302}
-										height={240}
-										layout='responsive'
-										src='/Images/Rectangle_6.png'
-										className='img-fluid rounded'
-										alt='Rectangle_6'
-									/>
-								</div>
-							</div>
-							<div className='col-6 d-flex'>
-								<div className='col-12 p-1'>
-									<Image
-										width={302}
-										height={240}
-										layout='responsive'
-										src='/Images/Rectangle_5.png'
-										className='img-fluid rounded'
-										alt='Rectangle_5'
-									/>
-								</div>
-								<div className='col-12 p-1'>
-									<Image
-										width={302}
-										height={240}
-										layout='responsive'
-										src='/Images/Rectangle_7.png'
-										className='img-fluid rounded'
-										alt='Rectangle_7'
-									/>
-								</div>
-							</div>
+						<div className='col-6'>
+							<Image
+								width={302}
+								height={240}
+								layout='responsive'
+								src='/Images/Rectangle_5.png'
+								className='img-fluid rounded p-1'
+								alt='Rectangle_5'
+							/>
+							<Image
+								width={302}
+								height={240}
+								layout='responsive'
+								src='/Images/Rectangle_7.png'
+								className='img-fluid rounded p-1'
+								alt='Rectangle_7'
+							/>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<main className={`bg-light ${style.main} px-5`}>
-				<div className='d-flex container-fluid position-relative col-12 flex-row py-3'>
+			<main className={`bg-light ${style.main}`}>
+				<div className='d-flex flex-row px-5 py-3'>
 					<ul className='nav nav-tabs w-100'>
 						<li className='nav-item'>
 							<a className='nav-link active' aria-current='page' href='#'>
@@ -162,22 +150,23 @@ const HotelOverview: NextPage = () => {
 						</li>
 					</ul>
 				</div>
-				<div className='d-flex container-fluid position-relative col-12 flex-row'>
-					<div className='col-md-8 py-2'>
-						<div
-							className='alert alert-warning d-flex flex-row align-items-center justify-content-evenly text-black'
-							role='alert'>
-							<i className='bi bi-exclamation-octagon px-2 fs-3'></i>
-							<div>
+				<div className='d-flex flex-row px-5 pb-3'>
+					<div className='col-md-9 py-2'>
+						<div className='alert alert-warning d-flex text-black' role='alert'>
+							<i className='bi bi-exclamation-octagon fs-3'></i>
+							<div className='px-3'>
 								As part of the Coronavirus (COVID-19) restrictions, the property may
 								request additional documentation from guests to validate
 								identification, travel itinerary, and other relevant information.
 								Please contact the property for more details.
 							</div>
 						</div>
-						<div>
-							<h3 className='fw-bold'>Overview</h3>
-							<p>
+						<div className='pt-3'>
+							<h1 className='fw-bold'>Overview</h1>
+							<p
+								style={{
+									letterSpacing: '1px',
+								}}>
 								With a stay at Dusit Thani Dubai, you&apos;ll be centrally located
 								in Dubai, steps from Sheikh Zayed Road and within a 5-minute drive
 								of Dubai World Trade Centre. Featured amenities include a business
@@ -188,7 +177,10 @@ const HotelOverview: NextPage = () => {
 								surcharge (available 24 hours), and free self parking is available
 								onsite.
 							</p>
-							<p>
+							<p
+								style={{
+									letterSpacing: '1px',
+								}}>
 								With a stay at Dusit Thani Dubai, you&apos;ll be centrally located
 								in Dubai, steps from Sheikh Zayed Road and within a 5-minute drive
 								of Dubai World Trade Centre. Featured amenities include a business
@@ -201,69 +193,62 @@ const HotelOverview: NextPage = () => {
 							</p>
 						</div>
 					</div>
-					<div className='col-md-4 px-5 py-3'>
-						<div className='card col-lg-12'>
+					<div className='col-md-3 ps-5 py-2'>
+						<div className='card'>
 							<h2 className='card-header'>Highlights</h2>
-							<div className='card-body'>
-								<div className='row'>
-									<div className='col-6 px-2'>
-										<div className='py-1'>
-											<div
-												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img
-													src='/Images/Inside_city_center.svg'
-													alt='Inside_city_center'
-												/>
-												<h5>Inside city center</h5>
-											</div>
-										</div>
-										<div className='py-1'>
-											<div
-												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img src='/Images/transfer.svg' alt='transfer' />
-												<h5>Airport transfer</h5>
-											</div>
-										</div>
-										<div className='py-1'>
-											<div
-												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img
-													src='/Images/Excellent_view.svg'
-													alt='Excellent_view'
-												/>
-												<h5>
-													Excellent <br /> view
-												</h5>
-											</div>
+							<div className='card-body d-flex'>
+								<div className='col-6 px-1'>
+									<div className='p-1'>
+										<div
+											className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
+											<img
+												src='/Images/Inside_city_center.svg'
+												alt='Inside_city_center'
+											/>
+											<h5>Inside city center</h5>
 										</div>
 									</div>
-									<div className='col-6 px-2'>
-										<div className='py-1'>
-											<div
-												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img
-													src='/Images/Front_desk.svg'
-													alt='Front_desk'
-												/>
-												<h5>Front desk [24-hour]</h5>
-											</div>
+									<div className='p-1'>
+										<div
+											className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
+											<img src='/Images/transfer.svg' alt='transfer' />
+											<h5>Airport transfer</h5>
 										</div>
-										<div className='py-1'>
-											<div
-												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img
-													src='/Images/Sparkling_clean.svg'
-													alt='Sparkling_clean'
-												/>
-												<h5>Sparkling clean</h5>
-											</div>
+									</div>
+									<div className='p-1'>
+										<div
+											className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
+											<img
+												src='/Images/Excellent_view.svg'
+												alt='Excellent_view'
+											/>
+											<h5>Excellent view</h5>
 										</div>
-										<div className='py-1'>
-											<div
-												className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-												<img src='/Images/bus.svg' alt='bus' />
-												<h5>near to public transportation</h5>
-											</div>
+									</div>
+								</div>
+								<div className='col-6'>
+									<div className='p-1'>
+										<div
+											className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
+											<img src='/Images/Front_desk.svg' alt='Front_desk' />
+											<h5>Front desk [24-hour]</h5>
+										</div>
+									</div>
+									<div className='p-1'>
+										<div
+											className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
+											<img
+												src='/Images/Sparkling_clean.svg'
+												alt='Sparkling_clean'
+											/>
+											<h5>Sparkling clean</h5>
+										</div>
+									</div>
+									<div className='p-1'>
+										<div
+											className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
+											<img src='/Images/bus.svg' alt='bus' />
+											<h5>near to public transportation</h5>
 										</div>
 									</div>
 								</div>
@@ -271,8 +256,8 @@ const HotelOverview: NextPage = () => {
 						</div>
 					</div>
 				</div>
+				<BooksFooter />
 			</main>
-			<BooksFooter />
 		</>
 	)
 }
