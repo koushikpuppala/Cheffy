@@ -150,168 +150,701 @@ const HotelRoom: NextPage = () => {
 						</li>
 					</ul>
 				</div>
+				<div className='px-5 pb-3 d-flex'>
+					<span className='px-2'>12 room types</span>
+					<div
+						style={{
+							borderLeft: '#000 2px solid',
+						}}
+					/>
+					<span className='px-2'>77 room offers</span>
+				</div>
 				<div className='px-5'>
-					<div className={`d-flex ${style.filter} align-items-center`}>
-						<div className='col-2 px-2'>
-							<div className='input-group col-2'>
-								<div
-									className='input-group-text col-2'
-									style={{
-										backgroundColor: '#fff',
-									}}>
-									<i className='bi bi-envelope'></i>
-								</div>
-								<div className='form-floating col-10'>
-									<input
-										type='email'
-										className='form-control'
-										id='email'
-										placeholder='name@example.com'
+					<div
+						className={`d-flex ${style.filter} align-items-center justify-content-evenly`}>
+						<div className='d-flex col-10'>
+							<div className='col-2 px-2'>
+								<div className='input-group col-12'>
+									<div
+										className='input-group-text col-2'
 										style={{
-											borderRadius: '0 0.375rem 0.375rem 0',
-											borderLeft: 'none',
-										}}
-									/>
-									<label
-										htmlFor='email'
-										style={{
-											color: '#000',
+											backgroundColor: '#fff',
+											padding: '0.25rem',
 										}}>
-										Email address
-									</label>
+										<i
+											className='bx bxs-plane'
+											style={{
+												fontSize: '1.25rem',
+											}}></i>
+									</div>
+									<div className='form-floating col-10'>
+										<input
+											type='text'
+											className='form-control'
+											id='check-in'
+											placeholder='Check-in'
+											value={'May 17'}
+											style={{
+												borderRadius: '0 0.375rem 0.375rem 0',
+												borderLeft: 'none',
+											}}
+										/>
+										<label
+											htmlFor='check-in'
+											style={{
+												color: '#000',
+											}}>
+											Check-in
+										</label>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div className='col-2 px-2'>
-							<div className='input-group col-2'>
-								<div
-									className='input-group-text col-2'
-									style={{
-										backgroundColor: '#fff',
-									}}>
-									<i className='bi bi-envelope'></i>
-								</div>
-								<div className='form-floating col-10'>
-									<input
-										type='email'
-										className='form-control'
-										id='email'
-										placeholder='name@example.com'
+							<div className='col-2 px-2'>
+								<div className='input-group col-12'>
+									<div
+										className='input-group-text col-2'
 										style={{
-											borderRadius: '0 0.375rem 0.375rem 0',
-											borderLeft: 'none',
-										}}
-									/>
-									<label
-										htmlFor='email'
-										style={{
-											color: '#000',
+											backgroundColor: '#fff',
+											padding: '0.25rem',
 										}}>
-										Email address
-									</label>
+										<i
+											className='bx bxs-plane'
+											style={{
+												transform: 'rotate(180deg)',
+												fontSize: '1.25rem',
+											}}></i>
+									</div>
+									<div className='form-floating col-10'>
+										<input
+											type='text'
+											className='form-control'
+											id='check-out'
+											placeholder='Check-out'
+											value={'May 21'}
+											style={{
+												borderRadius: '0 0.375rem 0.375rem 0',
+												borderLeft: 'none',
+											}}
+										/>
+										<label
+											htmlFor='check-out'
+											style={{
+												color: '#000',
+											}}>
+											Check-out
+										</label>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div className='col-2 px-2'>
-							<div className='input-group col-2'>
-								<div
-									className='input-group-text col-2'
-									style={{
-										backgroundColor: '#fff',
-									}}>
-									<i className='bi bi-envelope'></i>
-								</div>
-								<div className='form-floating col-10'>
-									<input
-										type='email'
-										className='form-control'
-										id='email'
-										placeholder='name@example.com'
+							<div className='col-2 ps-2'>
+								<div className='input-group col-12'>
+									<div
+										className='input-group-text col-2'
 										style={{
-											borderRadius: '0 0.375rem 0.375rem 0',
-											borderLeft: 'none',
-										}}
-									/>
-									<label
-										htmlFor='email'
-										style={{
-											color: '#000',
+											backgroundColor: '#fff',
+											padding: '0.5rem',
 										}}>
-										Email address
-									</label>
+										<i
+											className='bi bi-people'
+											style={{
+												fontSize: '1.25rem',
+											}}></i>
+									</div>
+									<div className='form-floating col-10'>
+										<input
+											type='text'
+											className='form-control'
+											id='guests'
+											placeholder='name@example.com'
+											value={'1 Room,2 Guests'}
+											style={{
+												borderRadius: '0 0.375rem 0.375rem 0',
+												borderLeft: 'none',
+											}}
+										/>
+										<label
+											htmlFor='guests'
+											style={{
+												color: '#000',
+											}}>
+											Guests
+										</label>
+									</div>
 								</div>
 							</div>
+							<div className='px-4'>
+								<span
+									style={{
+										display: 'flex',
+										justifyContent: 'center',
+										alignItems: 'center',
+										boxShadow: '0px 0px 0px 1px #f4af49',
+										border: '0.05rem solid #f4af49',
+										background: '#f4af49',
+										padding: '0.75rem 2rem',
+										borderRadius: '0.5rem',
+									}}>
+									Search
+								</span>
+							</div>
 						</div>
-						<div className='px-4'>
+						<div className='col-2 px-2 d-flex align-items-center'>
 							<span
+								className='col-4'
 								style={{
-									display: 'flex',
-									justifyContent: 'center',
-									alignItems: 'center',
-									boxShadow: '0px 0px 0px 1px #f4af49',
-									border: '0.05rem solid #f4af49',
-									background: '#f4af49',
-									padding: '0.75rem 2rem',
-									borderRadius: '0.5rem',
+									width: 'max-content !important',
 								}}>
-								Search
+								Sort By:
 							</span>
+							<select
+								className='form-select form-select-lg'
+								aria-label='.form-select-lg example'>
+								<option selected>Open this select menu</option>
+								<option value='1'>One</option>
+								<option value='2'>Two</option>
+								<option value='3'>Three</option>
+							</select>
 						</div>
-						<div></div>
 					</div>
 				</div>
-				<div className='d-flex flex-row px-5 pb-3'>
-					<div className='col-6'>
-						<div className='p-1'>
-							<div className='col-5'></div>
-							<div className='col-7'></div>
-							<div
-								className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-								<img
-									src='/Images/Inside_city_center.svg'
-									alt='Inside_city_center'
-								/>
-								<h5>Inside city center</h5>
+				<div className='d-flex flex-row px-5 py-3'>
+					<div className='col-6 pe-2'>
+						<div className='py-2'>
+							<div className={style.card}>
+								<div className='d-flex flex-column col-6'>
+									<img src='/Images/Rectangle_15.png' className='col-12 pb-1' />
+									<div className='d-flex col-12'>
+										<img src='/Images/Rectangle_16.png' className='col-6' />
+										<img
+											src='/Images/Rectangle_17.png'
+											className='col-6 ps-1'
+										/>
+									</div>
+								</div>
+								<div className='d-flex col-6 p-4 flex-column'>
+									<h2>Deluxe Twin Bed</h2>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Pay at hotel
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free Wi-Fi
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free cancellation before May 12, 2022
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										City view
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Non-smoking
+									</span>
+									<div className='d-flex justify-content-end pt-3'>
+										<div className='d-flex flex-column px-3'>
+											<span className={style.discount}>13% OFF</span>
+											<span className={style.price_value}>$151</span>
+										</div>
+										<button className={style.book_now}>Book Now</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div className='p-1'>
-							<div
-								className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-								<img src='/Images/transfer.svg' alt='transfer' />
-								<h5>Airport transfer</h5>
+						<div className='py-2'>
+							<div className={style.card}>
+								<div className='d-flex flex-column col-6'>
+									<img src='/Images/Rectangle_15.png' className='col-12 pb-1' />
+									<div className='d-flex col-12'>
+										<img src='/Images/Rectangle_16.png' className='col-6' />
+										<img
+											src='/Images/Rectangle_17.png'
+											className='col-6 ps-1'
+										/>
+									</div>
+								</div>
+								<div className='d-flex col-6 p-4 flex-column'>
+									<h2>Deluxe Twin Bed</h2>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Pay at hotel
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free Wi-Fi
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free cancellation before May 12, 2022
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										City view
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Non-smoking
+									</span>
+									<div className='d-flex justify-content-end pt-3'>
+										<div className='d-flex flex-column px-3'>
+											<span className={style.discount}>13% OFF</span>
+											<span className={style.price_value}>$151</span>
+										</div>
+										<button className={style.book_now}>Book Now</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div className='p-1'>
-							<div
-								className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-								<img src='/Images/Excellent_view.svg' alt='Excellent_view' />
-								<h5>Excellent view</h5>
+						<div className='py-2'>
+							<div className={style.card}>
+								<div className='d-flex flex-column col-6'>
+									<img src='/Images/Rectangle_15.png' className='col-12 pb-1' />
+									<div className='d-flex col-12'>
+										<img src='/Images/Rectangle_16.png' className='col-6' />
+										<img
+											src='/Images/Rectangle_17.png'
+											className='col-6 ps-1'
+										/>
+									</div>
+								</div>
+								<div className='d-flex col-6 p-4 flex-column'>
+									<h2>Deluxe Twin Bed</h2>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Pay at hotel
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free Wi-Fi
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free cancellation before May 12, 2022
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										City view
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Non-smoking
+									</span>
+									<div className='d-flex justify-content-end pt-3'>
+										<div className='d-flex flex-column px-3'>
+											<span className={style.discount}>13% OFF</span>
+											<span className={style.price_value}>$151</span>
+										</div>
+										<button className={style.book_now}>Book Now</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div className='col-6'>
-						<div className='p-1'>
-							<div
-								className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-								<img
-									src='/Images/Inside_city_center.svg'
-									alt='Inside_city_center'
-								/>
-								<h5>Inside city center</h5>
+					<div className='col-6 ps-2'>
+						<div className='py-2'>
+							<div className={style.card}>
+								<div className='d-flex flex-column col-6'>
+									<img src='/Images/Rectangle_15.png' className='col-12 pb-1' />
+									<div className='d-flex col-12'>
+										<img src='/Images/Rectangle_16.png' className='col-6' />
+										<img
+											src='/Images/Rectangle_17.png'
+											className='col-6 ps-1'
+										/>
+									</div>
+								</div>
+								<div className='d-flex col-6 p-4 flex-column'>
+									<h2>Deluxe Twin Bed</h2>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Pay at hotel
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free Wi-Fi
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free cancellation before May 12, 2022
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										City view
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Non-smoking
+									</span>
+									<div className='d-flex justify-content-end pt-3'>
+										<div className='d-flex flex-column px-3'>
+											<span className={style.discount}>13% OFF</span>
+											<span className={style.price_value}>$151</span>
+										</div>
+										<button className={style.book_now}>Book Now</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div className='p-1'>
-							<div
-								className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-								<img src='/Images/transfer.svg' alt='transfer' />
-								<h5>Airport transfer</h5>
+						<div className='py-2'>
+							<div className={style.card}>
+								<div className='d-flex flex-column col-6'>
+									<img src='/Images/Rectangle_15.png' className='col-12 pb-1' />
+									<div className='d-flex col-12'>
+										<img src='/Images/Rectangle_16.png' className='col-6' />
+										<img
+											src='/Images/Rectangle_17.png'
+											className='col-6 ps-1'
+										/>
+									</div>
+								</div>
+								<div className='d-flex col-6 p-4 flex-column'>
+									<h2>Deluxe Twin Bed</h2>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Pay at hotel
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free Wi-Fi
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free cancellation before May 12, 2022
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										City view
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Non-smoking
+									</span>
+									<div className='d-flex justify-content-end pt-3'>
+										<div className='d-flex flex-column px-3'>
+											<span className={style.discount}>13% OFF</span>
+											<span className={style.price_value}>$151</span>
+										</div>
+										<button disabled className={style.book_now}>
+											Book Now
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div className='p-1'>
-							<div
-								className={`d-flex flex-column justify-content-center align-items-center text-center ${style.highlight_card}`}>
-								<img src='/Images/Excellent_view.svg' alt='Excellent_view' />
-								<h5>Excellent view</h5>
+						<div className='py-2'>
+							<div className={style.card}>
+								<div className='d-flex flex-column col-6'>
+									<img src='/Images/Rectangle_15.png' className='col-12 pb-1' />
+									<div className='d-flex col-12'>
+										<img src='/Images/Rectangle_16.png' className='col-6' />
+										<img
+											src='/Images/Rectangle_17.png'
+											className='col-6 ps-1'
+										/>
+									</div>
+								</div>
+								<div className='d-flex col-6 p-4 flex-column'>
+									<h2>Deluxe Twin Bed</h2>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Pay at hotel
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free Wi-Fi
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Free cancellation before May 12, 2022
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										City view
+									</span>
+									<span
+										style={{
+											display: 'flex',
+											alignItems: 'center',
+										}}>
+										<i
+											className='bi bi-check2'
+											style={{
+												color: '#04aa6d',
+												fontSize: '1.25rem',
+											}}></i>
+										Non-smoking
+									</span>
+									<div className='d-flex justify-content-end pt-3'>
+										<div className='d-flex flex-column px-3'>
+											<span className={style.discount}>13% OFF</span>
+											<span className={style.price_value}>$151</span>
+										</div>
+										<button className={style.book_now}>Book Now</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
