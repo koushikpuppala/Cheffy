@@ -58,7 +58,7 @@ const Footer: NextComponentType = () => {
 								</ul>
 							</div>
 						</div>
-						<div className='d-flex col-3 flex-column p-1'>
+						<div className='d-flex col-3 flex-column px-5 p-1'>
 							<div className='d-flex row'>
 								<h3 className='text-black fw-bold'>Destinations</h3>
 								<ul

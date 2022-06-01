@@ -183,7 +183,7 @@ const HotelRoom: NextPage = () => {
 											className='form-control'
 											id='check-in'
 											placeholder='Check-in'
-											value={'May 17'}
+											defaultValue={'May 17'}
 											style={{
 												borderRadius: '0 0.375rem 0.375rem 0',
 												borderLeft: 'none',
@@ -220,7 +220,7 @@ const HotelRoom: NextPage = () => {
 											className='form-control'
 											id='check-out'
 											placeholder='Check-out'
-											value={'May 21'}
+											defaultValue={'May 21'}
 											style={{
 												borderRadius: '0 0.375rem 0.375rem 0',
 												borderLeft: 'none',
@@ -256,7 +256,7 @@ const HotelRoom: NextPage = () => {
 											className='form-control'
 											id='guests'
 											placeholder='name@example.com'
-											value={'1 Room,2 Guests'}
+											defaultValue={'1 Room,2 Guests'}
 											style={{
 												borderRadius: '0 0.375rem 0.375rem 0',
 												borderLeft: 'none',
@@ -288,9 +288,9 @@ const HotelRoom: NextPage = () => {
 								</span>
 							</div>
 						</div>
-						<div className='col-2 px-2 d-flex align-items-center'>
+						<div className='col-2 d-flex align-items-center'>
 							<span
-								className='col-4'
+								className='col-4 px-1'
 								style={{
 									width: 'max-content !important',
 								}}>
@@ -298,8 +298,11 @@ const HotelRoom: NextPage = () => {
 							</span>
 							<select
 								className='form-select form-select-lg'
-								aria-label='.form-select-lg example'>
-								<option selected>Open this select menu</option>
+								aria-label='.form-select-lg example'
+								defaultValue={'0'}>
+								<option value='0' selected>
+									Best value
+								</option>
 								<option value='1'>One</option>
 								<option value='2'>Two</option>
 								<option value='3'>Three</option>
