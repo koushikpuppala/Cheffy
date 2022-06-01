@@ -124,12 +124,12 @@ const HotelRoom: NextPage = () => {
 				<div className='d-flex flex-row px-5 py-3'>
 					<ul className='nav nav-tabs w-100'>
 						<li className='nav-item'>
-							<a className='nav-link active' aria-current='page' href='#'>
+							<a className='nav-link' aria-current='page' href='#'>
 								Overview
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link' href='#'>
+							<a className='nav-link active' href='#'>
 								Rooms
 							</a>
 						</li>
