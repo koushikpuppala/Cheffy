@@ -1,0 +1,31 @@
+.footer {
+	background: #e8f0fe;
+	.subscribe {
+		width: 100%;
+		background: #f6f9ff;
+		.btn {
+			border-radius: 0.5rem;
+			border: none;
+			padding: 1rem 2rem;
+			cursor: pointer;
+			text-decoration: none;
+			color: #000;
+			background: #f4ae45;
+		}
+	}
+	ul {
+		li {
+			a {
+				color: black !important;
+			}
+			padding: 0.5rem 0;
+		}
+	}
+	.credits {
+		width: 100%;
+		padding: 1rem 0;
+		text-align: center;
+		color: #fff;
+		background: #000;
+	}
+}

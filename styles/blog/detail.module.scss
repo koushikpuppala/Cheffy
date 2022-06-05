@@ -1,0 +1,35 @@
+.hero {
+	width: 100%;
+	color: black;
+}
+
+.main {
+	color: #000;
+	.tags {
+		font-weight: lighter;
+		font-size: 0.75rem;
+		background-color: #a4d5ff;
+		padding: 0.25rem 0.5rem;
+		border-radius: 0.5rem;
+	}
+	.social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		border-radius: 50%;
+		width: 2rem;
+		height: 2rem;
+		border: #000 1px solid;
+		font-size: 1.25rem;
+	}
+	.btn {
+		border-radius: 0.5rem;
+		border: none;
+		padding: 1rem 2rem;
+		cursor: pointer;
+		text-decoration: none;
+		color: #000;
+		background: #f4ae45;
+	}
+}
