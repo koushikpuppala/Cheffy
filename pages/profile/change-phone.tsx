@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import { ProfileFooter, ProfileNavbar } from '../../components'
-import style from '../../styles/profile/first-time.module.scss'
+import style from '../../styles/profile/change-phone.module.scss'
 
-const ProfileFirstTime: NextPage = () => {
+const ProfileChangePhone: NextPage = () => {
 	return (
 		<>
 			<ProfileNavbar />
@@ -39,22 +39,22 @@ const ProfileFirstTime: NextPage = () => {
 							<h3 className='fw-bold'>User details</h3>
 							<div className={style.user_name}>
 								<div className='col-3 pe-3'>
-									<img src='/Images/empty_avatar.png' alt='' width='150px' />
+									<img src='/Images/blog_avatar.png' alt='' />
 								</div>
 								<div className='col-9 ps-3 d-flex flex-row justify-content-between'>
 									<div className='d-flex flex-column justify-content-evenly'>
 										<span>Name</span>
 										<strong>Jhon Doe</strong>
-										{/* <br />
+										<br />
 										<span className='text-muted'>
 											Last updated: <br />
 											{new Date().toLocaleTimeString()}
-										</span> */}
+										</span>
 									</div>
 									<div className='d-flex flex-row justify-content-between align-items-end'>
 										<div className='px-2'>
 											<button className={style.edit_btn_photo}>
-												Add Profile Photo
+												Edit Profile Photo
 											</button>
 										</div>
 										<div className='px-2'>
@@ -83,8 +83,57 @@ const ProfileFirstTime: NextPage = () => {
 							</div>
 							<br />
 							<div className={style.user_phone}>
-								<span>Phone Number</span>
-								<button className={style.btn}>ADD</button>
+								<div className='input-group'>
+									<div
+										className='input-group-text col-1'
+										style={{
+											backgroundColor: '#fff',
+										}}>
+										<i className='bi bi-globe fs-4 col-12'></i>
+									</div>
+									<select
+										className='form-select'
+										id='autoSizingSelect'
+										style={{
+											borderRadius: '0 0.375rem 0.375rem 0',
+											borderLeft: 'none',
+										}}>
+										<option selected={true}>Select Country/region</option>
+										<option value='1'>USA</option>
+										<option value='2'>SINGAPORE</option>
+										<option value='3'>INDIA</option>
+									</select>
+								</div>
+								<br />
+								<div className='input-group'>
+									<div
+										className='input-group-text col-1'
+										style={{
+											backgroundColor: '#fff',
+										}}>
+										<i className='bi bi-telephone fs-4 col-12'></i>
+									</div>
+									<div className='form-floating col-11'>
+										<input
+											type='text'
+											className='form-control'
+											id='new-phone'
+											placeholder='Enter Phone Number (optional)'
+											style={{
+												borderRadius: '0 0.375rem 0.375rem 0',
+												borderLeft: 'none',
+											}}
+										/>
+										<label htmlFor='new-phone'>
+											Enter Phone Number (optional)
+										</label>
+									</div>
+								</div>
+								<br />
+								<div className='d-flex flex-row justify-content-evenly'>
+									<button className={style.btn_save}>Save</button>
+									<button className={style.btn_cancel}>Cancel</button>
+								</div>
 							</div>
 						</div>
 						<div>
@@ -202,4 +251,4 @@ const ProfileFirstTime: NextPage = () => {
 	)
 }
 
-export default ProfileFirstTime
+export default ProfileChangePhone

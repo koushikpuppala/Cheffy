@@ -1,0 +1,40 @@
+.hero {
+	width: 100%;
+	color: black;
+	.card {
+		display: flex;
+		justify-content: center;
+		border: #cecfd1 solid 1px;
+		padding: 2.5rem;
+		height: 40rem;
+		border-radius: 1rem;
+		ul {
+			width: 100%;
+		}
+		li {
+			list-style: none;
+		}
+	}
+	.btn_cancel {
+		text-transform: uppercase;
+		padding: 0.5rem;
+		border: none;
+		background: transparent;
+	}
+	.btn_save {
+		text-transform: uppercase;
+		padding: 0.5rem 0.75rem;
+		border: #f4ae45 solid 1px;
+		border-radius: 0.5rem;
+		background: #f4ae45;
+	}
+	.promotion {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: #e8f0fe solid 1px;
+		padding: 7.5rem;
+		border-radius: 1rem;
+		background: #e8f0fe;
+	}
+}

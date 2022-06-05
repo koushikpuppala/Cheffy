@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable @next/next/no-img-element */
 import { NextPage } from 'next'
 import Image from 'next/image'
 import { BlogFooter, BlogNavbar } from '../../components'

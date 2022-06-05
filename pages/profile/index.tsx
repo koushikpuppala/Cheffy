@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import { ProfileFooter, ProfileNavbar } from '../../components'
 import style from '../../styles/profile/index.module.scss'

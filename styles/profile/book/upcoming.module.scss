@@ -1,0 +1,57 @@
+.hero {
+	width: 100%;
+	color: black;
+	.card {
+		display: flex;
+		justify-content: center;
+		border: #cecfd1 solid 1px;
+		padding: 2.5rem;
+		height: 40rem;
+		border-radius: 1rem;
+		ul {
+			width: 100%;
+		}
+		li {
+			list-style: none;
+		}
+	}
+
+	.main_card {
+		display: flex;
+		border: #c9cacd 0.05rem solid;
+		border-radius: 0.5rem;
+		overflow: hidden;
+		hr {
+			transform: rotate(90deg);
+			width: 2rem;
+		}
+		.line {
+			border-left: #c9cacd 2px solid;
+		}
+		.btn_view {
+			border: #c9cacd 1px solid;
+			border-radius: 0.5rem;
+			overflow: hidden;
+			display: flex;
+			padding: 0.5rem 1rem;
+			background: transparent;
+		}
+		.btn_details {
+			border: #f4b04b 0.05rem solid;
+			background: #f4b04b;
+			border-radius: 0.5rem;
+			overflow: hidden;
+			display: flex;
+			padding: 0.5rem 2rem;
+		}
+	}
+	.promotion {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: #e8f0fe solid 1px;
+		padding: 7.5rem;
+		border-radius: 1rem;
+		background: #e8f0fe;
+	}
+}

@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import { ProfileFooter, ProfileNavbar } from '../../components'
-import style from '../../styles/profile/first-time.module.scss'
+import style from '../../styles/profile/change-password.module.scss'
 
-const ProfileFirstTime: NextPage = () => {
+const ProfileChangePassword: NextPage = () => {
 	return (
 		<>
 			<ProfileNavbar />
@@ -39,22 +39,22 @@ const ProfileFirstTime: NextPage = () => {
 							<h3 className='fw-bold'>User details</h3>
 							<div className={style.user_name}>
 								<div className='col-3 pe-3'>
-									<img src='/Images/empty_avatar.png' alt='' width='150px' />
+									<img src='/Images/blog_avatar.png' alt='' />
 								</div>
 								<div className='col-9 ps-3 d-flex flex-row justify-content-between'>
 									<div className='d-flex flex-column justify-content-evenly'>
 										<span>Name</span>
 										<strong>Jhon Doe</strong>
-										{/* <br />
+										<br />
 										<span className='text-muted'>
 											Last updated: <br />
 											{new Date().toLocaleTimeString()}
-										</span> */}
+										</span>
 									</div>
 									<div className='d-flex flex-row justify-content-between align-items-end'>
 										<div className='px-2'>
 											<button className={style.edit_btn_photo}>
-												Add Profile Photo
+												Edit Profile Photo
 											</button>
 										</div>
 										<div className='px-2'>
@@ -75,16 +75,69 @@ const ProfileFirstTime: NextPage = () => {
 							</div>
 							<br />
 							<div className={style.user_password}>
-								<div className='d-flex flex-column'>
-									<span className='text-muted'>Password</span>
-									<span>••••••••••</span>
+								<div className='input-group'>
+									<div
+										className='input-group-text col-1'
+										style={{
+											backgroundColor: '#fff',
+										}}>
+										<i className='bi bi-shield-lock fs-4 col-12'></i>
+									</div>
+									<div className='form-floating col-11'>
+										<input
+											type='password'
+											className='form-control'
+											id='current-password'
+											placeholder='Enter Current Password'
+											style={{
+												borderRadius: '0 0.375rem 0.375rem 0',
+												borderLeft: 'none',
+											}}
+										/>
+										<label htmlFor='current-password'>
+											Enter Current Password
+										</label>
+									</div>
 								</div>
-								<button className={style.btn}>Change</button>
+								<br />
+								<div className='input-group'>
+									<div
+										className='input-group-text col-1'
+										style={{
+											backgroundColor: '#fff',
+										}}>
+										<i className='bi bi-shield-lock fs-4 col-12'></i>
+									</div>
+									<div className='form-floating col-11'>
+										<input
+											type='password'
+											className='form-control'
+											id='new-password'
+											placeholder='Enter New Password'
+											style={{
+												borderRadius: '0 0.375rem 0.375rem 0',
+												borderLeft: 'none',
+											}}
+										/>
+										<label htmlFor='new-password'>Enter New Password</label>
+									</div>
+								</div>
+								<br />
+								<div className='d-flex flex-row justify-content-evenly'>
+									<button className={style.btn_save}>Save</button>
+									<button className={style.btn_cancel}>Cancel</button>
+								</div>
 							</div>
 							<br />
 							<div className={style.user_phone}>
-								<span>Phone Number</span>
-								<button className={style.btn}>ADD</button>
+								<div className='d-flex flex-column'>
+									<span className='text-muted'>Phone Number</span>
+									<div>
+										<span className='pe-4'>+19159969739</span>
+										<span className={style.verified}>verified</span>
+									</div>
+								</div>
+								<button className={style.btn}>Edit</button>
 							</div>
 						</div>
 						<div>
@@ -202,4 +255,4 @@ const ProfileFirstTime: NextPage = () => {
 	)
 }
 
-export default ProfileFirstTime
+export default ProfileChangePassword
