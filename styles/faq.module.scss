@@ -1,0 +1,29 @@
+.hero {
+	width: 100%;
+	color: black;
+	.card {
+		display: flex;
+		justify-content: center;
+		border: #cecfd1 solid 1px;
+		padding: 2.5rem 0 7.5rem 0;
+		height: 40rem;
+		border-radius: 1rem;
+		li {
+			list-style: none;
+		}
+	}
+	.accordionItem {
+		border: 1px solid #cecfd1 !important;
+		border-radius: 0.5rem !important;
+		overflow: hidden;
+	}
+	.promotion {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: #e8f0fe solid 1px;
+		padding: 7.5rem;
+		border-radius: 1rem;
+		background: #e8f0fe;
+	}
+}
