@@ -16,8 +16,8 @@
 		"boxicons": "^2.1.2",
 		"glightbox": "^3.2.0",
 		"next": "12.1.6",
-		"react": "18.1.0",
-		"react-dom": "18.1.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
 		"react-google-recaptcha": "^2.1.0",
 		"scss": "^0.2.4",
 		"swiper": "^8.1.5"
